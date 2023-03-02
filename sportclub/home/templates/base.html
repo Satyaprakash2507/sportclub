@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title> {% block title %}Sports Club Management System{% endblock title %}| SatyaSportClub.com</title>
+  <link rel="stylesheet" href="/static/style.css?{% now "U" %}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <script src="../static/script.js" language="JavaScript"></script>
+  
+</head>
+<body>
+
+<nav id="navbar">
+        <div id="logo">
+            <img src="../static/logo.png" alt="SatyaSportsClub.com" align="bottom">
+           <br><strong>SatyaSportsClub</strong>
+        </div>
+        <ul>
+            <li class="item"><a href="/home">Home</a></li>
+            <li class="item"><a href="/about">About US</a></li>
+            <li class="item"><a href="/contact">Contact Us</a></li>
+            <li class="item"><a href="/services">Club and Services</a></li>
+            <li class="item"><a href="/payment">Payment</a></li>
+            <li class="score"><a href="/score">Live Score</a></li>
+        </ul>
+        <div class="rightnav">
+            <button type="button"> <a href="/register"> Registration</a></button>
+        </div>   
+</nav>
+
+{% block body %}{% endblock body %}
+</body>
+</html>

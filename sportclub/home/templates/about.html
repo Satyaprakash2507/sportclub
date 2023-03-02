@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+ <link rel="stylesheet" href="../static/about.css">
+<br><br><br>
+<main1>
+<div class="card6">
+  <img src="../static/satya.jpg" alt="Satya" style="width:80%">
+  <h1>SATYAPRAKASH SINGH YADAV</h1>
+  <p class="title">CEO & Founder</p>
+  <p>Lucknow University</p>
+  <section1>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="/contact"><button class="button">Contact</button></a>
+  </section1>
+</div>
+<br><br><br>
+<section3>
+<h1 style="text-align:center"><strong>Our Team</strong></h1>
+<div class="row">
+  <div class="column">
+    <div class="card2">
+      <img src="../static/amaan.jpg" alt="Amaan" style="width:100%">
+      <div class="container">
+        <h2>Amaan</h2>
+        <p class="title2">Oranizer</p>
+        <p>Tournament Organizer</p>
+        <p>amaan40@gmail.com</p>
+        <a href="/contact"><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card2">
+      <img src="../static/sarvesh.jpeg" alt="Sarvesh" style="width:100%">
+      <div class="container">
+        <h2>Sarvesh</h2>
+        <p class="title2">Sports Manager</p>
+        <p>Management</p>
+        <p>Sarvesh12@gmail.com</p>
+        <a href="/contact"><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</section3>
+
+  <div class="column">
+    <div class="card2">
+      <img src="/static/vaibhav.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Vaibhav </h2>
+        <p class="title2">Accountant</p>
+        <p>Money flow</p>
+        <p>vaibhav20@gmail.com</p>
+        <a href="/contact"><button class="button">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+</main1>
+<br><br><br>
+<div style="position:absolute;bottom:-1200px" id="footer-container">
+{% include 'footer.html' %}
+</div>
+{% endblock body %}

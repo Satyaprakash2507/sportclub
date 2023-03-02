@@ -1,0 +1,147 @@
+section00 {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+  }
+  .wrap {
+    display: flex;
+    padding: 1rem 3rem 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 37px 22px 30px -5px rgb(0 0 0 / 10%);
+    margin-bottom: 2rem;
+    margin-top: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+  }
+  .ico-wrap {
+    margin: auto;
+  }
+  .mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+  }
+  .vcenter {
+    margin: auto;
+  }
+  .mbr-section-title3 {
+    text-align: left;
+  }
+  .container-s h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+  }
+  .mbr-bold {
+    font-weight: 700;
+  }
+  .container-s p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+  }
+  .display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1re}
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  section01{
+      padding: 60px 0;
+  }
+  section01 .section-title{
+      text-align:center;
+      color:#007b5e;
+      margin-bottom:5px;
+      text-transform:uppercase;
+    font-size: 40px;
+  }
+  .text-center{
+    text-align: center;
+    font-family: serif;
+  }
+  .row-mt-5{
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    flex-direction: column;
+  }
+  .card-title{
+    font-size: 25px;
+  }
+  #what-we-do{
+      background:#ffffff;
+  }
+  #what-we-do .card-1{
+      padding: 1rem!important;
+      border: none;
+      margin-bottom:1rem;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  #what-we-do .card-1:hover{
+      -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  }
+  #what-we-do .card-1 .card-block{
+      padding-left: 50px;
+      position: relative;
+  }
+  #what-we-do .card-1 .card-block a{
+      color: #007b5e !important;
+      font-weight:700;
+      text-decoration:none;
+  }
+  #what-we-do .card-1 .card-block a i{
+      display:none;
+      
+  }
+  #what-we-do .card-1:hover .card-block a i{
+      display:inline-block;
+      font-weight:700;
+      
+  }
+  #what-we-do .card-1 .card-block:before{
+      font-family: FontAwesome;
+      position: absolute;
+      font-size: 39px;
+      color: #007b5e;
+      left: 0;
+      -webkit-transition: -webkit-transform .2s ease-in-out;
+      transition:transform .2s ease-in-out;
+  }
+  #what-we-do .card-1 .block-1:before{
+      content: "\f0e7";
+  }
+  #what-we-do .card-1 .block-2:before{
+      content: "\f0eb";
+  }
+  #what-we-do .card-1 .block-3:before{
+      content: "\f00c";
+  }
+  #what-we-do .card-1 .block-4:before{
+      content: "\f209";
+  }
+  #what-we-do .card-1 .block-5:before{
+      content: "\f0a1";
+  }
+  #what-we-do .card-1 .block-6:before{
+      content: "\f218";
+  }
+  #what-we-do .card-1:hover .card-block:before{
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);	
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  
+  

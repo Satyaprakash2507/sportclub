@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<link rel="stylesheet" href="../static/contact.css">
+<div class="contact-container">
+   <h1 class="contact">CONTACT US</h1>
+   <div>{{ msg }}</div>
+  <form action="../contactaction" method="post">
+  {% csrf_token %}
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">Email Id</label>
+    <input type="text" id="email1" name="email1" placeholder="Your your email id..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+<br><br><br>
+<div style="position:absolute;bottom:-500px" id="footer-container">
+{% include 'footer.html' %}
+{% endblock body %}
+
+
+

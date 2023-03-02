@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block title %}register{% endblock title %}
+{% block body %}
+<div>{{ msg }}</div>
+<form action="../registeraction" method="post">
+{%csrf_token%}
+<body>
+<br><br>
+
+  <div class="container2">
+  <h1 class="register">REGISTER YOUR TEAM</h1>
+    <div class="title2">Registration</div>
+    <div class="content2">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Team Name</span>
+            <input id="tname" type="text" placeholder="Enter your team name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="email" type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input id="pnumber" type="text" placeholder="Enter your number" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">Total team member</span>
+            <input id="tmember" type="text" placeholder="Players plus staff member" required>
+          </div>
+          <div class="input-box">
+            <span id="sports" class="details">Sport Name</span>
+                <select id="sport-name" name="sport-name">
+                        <option value="ck">Cricket</option>
+                        <option value="hk">Hockey</option>
+                        <option value="bb">Basketball</option>
+                        <option value="vb">Vollyball</option>
+                        <option value="bm">Batminton</option>
+                        <option value="fb">Football</option>
+                        <option value="tt">Table Tennis</option>
+                 </select>
+          </div>
+           
+          <div class="input-box">
+            <span id="agroup" class="details">Age Group</span>
+                <select id="age-group" name="age-group">
+                        <option value="u12">Under 12</option>
+                        <option value="u14">Under 14</option>
+                        <option value="u16">Under 16</option>
+                        <option value="u18">Under 18</option>
+                        <option value="u20">Under 20</option>
+                        <option value="u23">Under 23</option>
+                        <option value="a23">Above 23</option>
+                 </select>
+          </div>
+        </div>
+         <div class="input-box">
+        <div class="gender-details">
+          <input id="team" type="radio" name="gender" id="dot-1">
+          <input id="team" type="radio" name="gender" id="dot-2">
+          <span class="gender-title">Team</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          </div>
+        </div>
+        </div>
+           <div class="input-box">
+         <div class="match-details">
+          <input id="Match" type="radio" name="match" id="dot-3">
+          <input id="Match" type="radio" name="match" id="dot-4">
+          <span class="match-title">Match</span>
+          <div class="category">
+            <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="match">Single Match</span>
+          </label>
+          <label for="dot-4">
+            <span class="dot four"></span>
+            <span class="match">Tournament</span>
+          </label>
+          </div>
+        </div>
+        </div>
+        <div class="button2">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+<div style="position:absolute;bottom:-700px" id="footer-container">
+{% include 'footer.html' %} 
+</div>
+{% endblock body %}
